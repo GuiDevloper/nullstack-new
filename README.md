@@ -1,6 +1,6 @@
 # Nullstack New
 
-Run a Nullstack template with just a link ✨🚀
+Run a Nullstack template with one link ✨🚀
 
 <img src='https://raw.githubusercontent.com/nullstack/nullstack/master/nullstack.png' height='50' alt='Nullstack' />
 

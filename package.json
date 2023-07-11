@@ -1,7 +1,7 @@
 {
   "name": "nullstack-new",
   "version": "0.0.1",
-  "description": "Run a Nullstack template with just a link",
+  "description": "Run a Nullstack template with one link",
   "author": "GuiDevloper",
   "license": "MIT",
   "devDependencies": {
