@@ -1,6 +1,9 @@
 import Nullstack, { NullstackClientContext, NullstackNode } from 'nullstack'
 
 import './Application.css'
+import redirects from './redirects'
+
+declare function NotFound(): NullstackNode
 declare function Head(): NullstackNode
 
 class Application extends Nullstack {
@@ -9,6 +12,12 @@ class Application extends Nullstack {
     page.locale = 'en-US'
     page.title = `${project.name} Full Stack Template at StackBlitz`
     page.description = 'Run a Nullstack template with one link ✨🚀'
+  }
+
+  async hydrate({ router }: NullstackClientContext) {
+    if (redirects[router.path]) {
+      router.url = redirects[router.path]
+    }
   }
 
   renderHead() {
@@ -22,8 +31,17 @@ class Application extends Nullstack {
     )
   }
 
-  render() {
-    return <Head />
+  renderNotFound() {
+    return <h1> No project found with that name! </h1>
+  }
+
+  render({ router }: NullstackClientContext) {
+    return (
+      <>
+        <Head />
+        {!redirects[router.path] && <NotFound />}
+      </>
+    )
   }
 
 }
