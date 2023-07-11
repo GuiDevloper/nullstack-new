@@ -1,0 +1,11 @@
+{
+  "extends": "plugin:nullstack/recommended",
+  "rules": {
+    "nullstack/prettier": [
+      "warn",
+      {
+        "usePrettierrc": true
+      }
+    ]
+  }
+}
