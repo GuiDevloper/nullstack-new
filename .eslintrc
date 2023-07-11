@@ -1,0 +1,22 @@
+{
+  "extends": "plugin:nullstack/recommended",
+  "rules": {
+    "nullstack/prettier": [
+      "warn",
+      {
+        "trailingComma": "all",
+        "tabWidth": 2,
+        "semi": false,
+        "singleQuote": true,
+        "printWidth": 80,
+        "arrowParens": "avoid",
+        "singleAttributePerLine": true,
+        "bracketSameLine": false
+      },
+      {
+        "usePrettierrc": false
+      }
+    ]
+  },
+  "ignorePatterns": ["projects"]
+}
