@@ -8,7 +8,12 @@ This is a mirror to our [StackBlitz](https://stackblitz.com/) templates for easy
 
 ## Main options
 
-// table with sub-links
+> 💡 All of them come with ESLint + Prettier, CSS and Babel configured to work on StackBlitz and locally
+
+| Link                                                                 | Tools |
+|----------------------------------------------------------------------|-------|
+| [nullstack-new.vercel.app](https://nullstack-new.vercel.app/)        | TSX   |
+| [nullstack-new.vercel.app/tsx](https://nullstack-new.vercel.app/tsx) | TSX   |
 
 ## Details good to know
 
