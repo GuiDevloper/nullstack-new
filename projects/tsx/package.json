@@ -10,10 +10,11 @@
   },
   "stackblitz": {
     "installDependencies": false,
-    "startCommand": "npm i nullstack-adapt-babel@0.0.20 -D && nullstack-adapt-babel && npm start",
+    "startCommand": "npm i nullstack-adapt-babel@0.0.20 -D --no-audit && nullstack-adapt-babel && npm start",
     "env": {
       "NULLSTACK_PROJECT_NAME": "[repl] my-app"
-    }
+    },
+    "compileTrigger": "save"
   },
   "prettier": {
     "trailingComma": "all",
