@@ -1,0 +1,145 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and \${1:label}, \${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "Print to console": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "clog",
+    "body": ["console.log('$1');", "$2"],
+    "description": "Log output to console"
+  },
+  "Nullstack component (render)": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "n!",
+    "body": [
+      "import Nullstack from 'nullstack';",
+      "",
+      "class ${TM_FILENAME_BASE} extends Nullstack {",
+      "  ",
+      "  render() {",
+      "    return (",
+      "      <div> ${TM_FILENAME_BASE}${0} </div>",
+      "    )",
+      "  }",
+      "",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Nullstack (render)"
+  },
+  "Nullstack component (render/initiate)": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "n!!",
+    "body": [
+      "import Nullstack from 'nullstack';",
+      "",
+      "class ${TM_FILENAME_BASE} extends Nullstack {",
+      "  ",
+      "  async initiate() {",
+      "    // your code goes here",
+      "  }",
+      "  ",
+      "  render() {",
+      "    return (",
+      "      <div> ${TM_FILENAME_BASE}${0} </div>",
+      "    )",
+      "  }",
+      "",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Nullstack (render/initiate)"
+  },
+  "Nullstack component (render/prepare/initiate)": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "n!!!",
+    "body": [
+      "import Nullstack from 'nullstack';",
+      "",
+      "class ${TM_FILENAME_BASE} extends Nullstack {",
+      "  ",
+      "  prepare() {",
+      "    // your code goes here",
+      "  }",
+      "  ",
+      "  async initiate() {",
+      "    // your code goes here",
+      "  }",
+      "  ",
+      "  render() {",
+      "    return (",
+      "      <div> ${TM_FILENAME_BASE}${0} </div>",
+      "    )",
+      "  }",
+      "",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Nullstack (render/prepare/initiate)"
+  },
+  "Nullstack component (render/prepare/initiate/hydrate)": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "n!!!!",
+    "body": [
+      "import Nullstack from 'nullstack';",
+      "",
+      "class ${TM_FILENAME_BASE} extends Nullstack {",
+      "  ",
+      "  prepare() {",
+      "    // your code goes here",
+      "  }",
+      "  ",
+      "  async initiate() {",
+      "    // your code goes here",
+      "  }",
+      "  ",
+      "  async hydrate() {",
+      "    // your code goes here",
+      "  }",
+      "  ",
+      "  render() {",
+      "    return (",
+      "      <div> ${TM_FILENAME_BASE}${0} </div>",
+      "    )",
+      "  }",
+      "",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Nullstack (render/prepare/initiate/hydrate)"
+  },
+  "Nullstack component with props": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "n!props",
+    "body": [
+      "import Nullstack from 'nullstack';",
+      "import type { NullstackServerContext } from 'nullstack';",
+      "",
+      "type Props = NullstackServerContext & {",
+      "  /** ${TM_FILENAME_BASE} needs this */",
+      "  ${1}: ${2}",
+      "}",
+      "",
+      "class ${TM_FILENAME_BASE} extends Nullstack<Props> {",
+      "  ",
+      "  render({ ${1} }: Props) {",
+      "    return (",
+      "      <div> ${TM_FILENAME_BASE} {${1}} </div>",
+      "    )",
+      "  }",
+      "",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Nullstack component with props"
+  }
+}

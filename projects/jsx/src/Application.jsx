@@ -1,12 +1,10 @@
 import './Application.css'
-import Nullstack, { NullstackClientContext, NullstackNode } from 'nullstack'
+import Nullstack from 'nullstack'
 
 import Home from './Home'
 
-declare function Head(): NullstackNode
-
 class Application extends Nullstack {
-  prepare({ page }: NullstackClientContext) {
+  prepare({ page }) {
     page.locale = 'en-US'
   }
 

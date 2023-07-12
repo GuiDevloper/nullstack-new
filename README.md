@@ -14,6 +14,7 @@ This is a mirror to our [StackBlitz](https://stackblitz.com/) templates for easy
 |----------------------------------------------------------------------|-------|
 | [nullstack-new.vercel.app](https://nullstack-new.vercel.app/)        | TSX   |
 | [nullstack-new.vercel.app/tsx](https://nullstack-new.vercel.app/tsx) | TSX   |
+| [nullstack-new.vercel.app/jsx](https://nullstack-new.vercel.app/jsx) | JSX   |
 
 ## Details good to know
 

@@ -12,7 +12,7 @@
   "stackblitz": {
     "startCommand": "nullstack-adapt-babel && npm start",
     "env": {
-      "NULLSTACK_PROJECT_NAME": "[repl] my-tsx-app"
+      "NULLSTACK_PROJECT_NAME": "[repl] my-jsx-app"
     },
     "compileTrigger": "save"
   },

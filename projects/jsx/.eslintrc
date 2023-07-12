@@ -1,0 +1,21 @@
+{
+  "overrides": [
+    {
+      "files": [
+        "./**"
+      ],
+      "extends": "plugin:nullstack/recommended",
+      "rules": {
+        // disabling to sync with only-prettier StackBlitz
+        "padded-blocks": "off",
+        "nullstack/prettier": [
+          "warn",
+          // prettier config located at package.json#prettier
+          {
+            "usePrettierrc": true
+          }
+        ]
+      }
+    }
+  ]
+}

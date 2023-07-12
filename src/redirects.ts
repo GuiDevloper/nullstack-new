@@ -4,4 +4,5 @@ const fullPath =
 export default {
   '/': `${fullPath}tsx?title=Nullstack New TSX`,
   '/tsx': `${fullPath}tsx?title=Nullstack New TSX`,
+  '/jsx': `${fullPath}jsx?title=Nullstack New JSX`,
 }
