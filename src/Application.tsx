@@ -1,13 +1,11 @@
+import './Application.css'
 import Nullstack, {
   NullstackClientContext,
   NullstackNode,
 } from 'nullstack'
 
-import './Application.css'
-import redirects from './redirects'
+import Home from './Home'
 
-declare function NotFound(): NullstackNode
-declare function Redirecting(): NullstackNode
 declare function Head(): NullstackNode
 
 class Application extends Nullstack {
@@ -16,12 +14,6 @@ class Application extends Nullstack {
     page.locale = 'en-US'
     page.title = `${project.name} Full Stack Template at StackBlitz`
     page.description = 'Run a Nullstack template with one link ✨🚀'
-  }
-
-  async hydrate({ router }: NullstackClientContext) {
-    if (redirects[router.path]) {
-      router.url = redirects[router.path]
-    }
   }
 
   renderHead() {
@@ -48,36 +40,11 @@ class Application extends Nullstack {
     )
   }
 
-  renderNotFound() {
-    return (
-      <>
-        <h1> 404: No project found with that name! </h1>
-        <h2> Try one of those: </h2>
-        <ul>
-          {Object.keys(redirects).map(projectRoute => {
-            if (projectRoute === '/') return false
-            return (
-              <li>
-                <a href={projectRoute}>
-                  {projectRoute.substring(1).toUpperCase()}
-                </a>
-              </li>
-            )
-          })}
-        </ul>
-      </>
-    )
-  }
-
-  renderRedirecting() {
-    return <h1 class="italic"> Redirecting to StackBlitz... </h1>
-  }
-
-  render({ router }: NullstackClientContext) {
+  render() {
     return (
       <>
         <Head />
-        {!redirects[router.path] ? <NotFound /> : <Redirecting />}
+        <Home />
       </>
     )
   }
