@@ -7,11 +7,11 @@ const exampleStackFullPath =
   'https://stackblitz.com/fork/github/GuiDevloper/nullstack-examples/tree/main/examples/'
 
 function getVercelFullPath(name: string) {
-  return `https://vercel.com/new/clone?repository-url=https://github.com/GuiDevloper/nullstack-new/tree/main/projects/${name}&project-name=${name}&repo-name=${name}&demo-title=Nullstack+${name}&demo-description=Nullstack+example+${name}&demo-url=https://github.com/GuiDevloper/nullstack-new/tree/main/projects/${name}&demo-image=https://nullstack.app/image-1200x630.png`
+  return `https://vercel.com/new/clone?repository-url=https://github.com/GuiDevloper/nullstack-new/tree/main/projects/${name}&project-name=${name}&repository-name=nullstack-${name}&demo-title=Nullstack+${name}&demo-description=Nullstack+example+${name}&demo-url=https://github.com/GuiDevloper/nullstack-new/tree/main/projects/${name}&demo-image=https://nullstack.app/image-1200x630.png`
 }
 
 function getExampleVercelFullPath(name: string) {
-  return `https://vercel.com/new/clone?repository-url=https://github.com/GuiDevloper/nullstack-examples/tree/main/examples/${name}&project-name=${name}&repo-name=${name}&demo-title=Nullstack+${name}&demo-description=Nullstack+example+${name}&demo-url=https://github.com/GuiDevloper/nullstack-examples/tree/main/examples/${name}&demo-image=https://nullstack.app/image-1200x630.png`
+  return `https://vercel.com/new/clone?repository-url=https://github.com/GuiDevloper/nullstack-examples/tree/main/examples/${name}&project-name=${name}&repository-name=nullstack-${name}&demo-title=Nullstack+${name}&demo-description=Nullstack+example+${name}&demo-url=https://github.com/GuiDevloper/nullstack-examples/tree/main/examples/${name}&demo-image=https://nullstack.app/image-1200x630.png`
 }
 
 function getStackExamples(examples: string[]) {
