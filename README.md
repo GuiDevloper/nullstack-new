@@ -16,6 +16,12 @@ This is a mirror to our [StackBlitz](https://stackblitz.com/) templates for easy
 | [nullstack-new.vercel.app/tsx](https://nullstack-new.vercel.app/tsx) | TSX   |
 | [nullstack-new.vercel.app/jsx](https://nullstack-new.vercel.app/jsx) | JSX   |
 
+## Examples & Vercel
+
+In [Nullstack Examples README](https://github.com/GuiDevloper/nullstack-examples/blob/main/README.md) Nullstack New is used with one-click buttons to load a specific template on StackBlitz, or deploy straight to Vercel using a url like follows:
+
+https://nullstack-new.vercel.app/active-class-name?vercel
+
 ## Details good to know
 
 Feeling curious? Take a look at those [details good to know](./projects/tsx/README.md#details-good-to-know) about how a Nullstack project works on StackBlitz
